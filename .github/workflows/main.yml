@@ -41,7 +41,7 @@ jobs:
           retention-days: 2
 
   windows:
-    name: Building LibreCAD3 on windows runner
+    name: windows
     runs-on: windows-latest
     steps:
 
