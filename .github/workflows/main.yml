@@ -1,10 +1,11 @@
 name: Librecad3 Builders
 'on':
-  workflow_dispatch: null
   push:
-    branches:
-      - main
-      - ci_dev
+    branches: [ 'master' ]
+  pull_request:
+    branches: [ 'master' ]
+  schedule:
+    - cron: '59 14 * * 2'
 
 jobs:
   linux:
